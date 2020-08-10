@@ -1,0 +1,219 @@
+.main-container {
+  width: 600px;
+  margin: 80px auto; }
+  @media all and (max-width: 750px) {
+    .main-container {
+      width: 500px; } }
+  @media all and (max-width: 650px) {
+    .main-container {
+      width: 500px; } }
+  @media all and (max-width: 550px) {
+    .main-container {
+      width: 400px;
+      margin: 70px auto; } }
+  @media all and (max-width: 440px) {
+    .main-container {
+      width: 370px;
+      margin: 60px auto; } }
+  @media all and (max-width: 400px) {
+    .main-container {
+      width: 350px; } }
+  @media all and (max-width: 370px) {
+    .main-container {
+      width: 300px; } }
+
+.block {
+  margin-bottom: 100px; }
+  @media all and (max-width: 550px) {
+    .block {
+      margin-bottom: 50px; } }
+  @media all and (max-width: 370px) {
+    .block {
+      margin-bottom: 40px; } }
+
+.block-1 .tab-panels img, .block-2 .tab-panels2 img {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+/*.block-3
+{ 
+    overflow: hidden;
+   div:nth-child(1)  {
+    display: flex;
+    //background: darkgray;
+    img{
+        border-radius: 0;
+        margin: auto;
+       width: 220px;
+       @media all and (max-width: 500px) {
+        width: 150px;
+       }
+    }
+   }
+  display: grid;
+grid-template-columns: 1fr 1fr;
+@media all and (max-width: 500px) {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  //grid-row-gap: 20px;
+  }
+}
+ .block-3-parts  .writing-container {
+       width: 100%;
+      // background: pink;
+     //display: flex;
+       p {
+    
+       width:300px; 
+        @media all and (max-width:700px) {
+            width: 90%;
+            margin: 0 auto;
+        }
+        }
+        .logo img {
+           
+        display: inline-block;
+        width: 20px;
+        border-radius: 0;
+        }
+ }
+*/
+.writing-container {
+  margin-top: 20px;
+  width: 100%; }
+  .writing-container p {
+    margin-left: 20px;
+    width: 300px; }
+    @media all and (max-width: 430px) {
+      .writing-container p {
+        width: 90%;
+        margin: 0 auto; } }
+  .writing-container .logo img {
+    display: inline-block;
+    width: 20px;
+    border-radius: 0; }
+
+.bold {
+  font-weight: 700; }
+
+ul {
+  list-style: none;
+  display: flex; }
+
+.tab-panels ul li.active {
+  color: #ffffff;
+  background: #000; }
+
+.tab-panels .panel {
+  display: none; }
+
+.tab-panels .panel.active {
+  display: block; }
+
+.tab-panels2 ul li.active {
+  color: #ffffff;
+  background: #000; }
+
+.tab-panels2 .panel {
+  display: none; }
+
+.tab-panels2 .panel.active {
+  display: block; }
+
+.tab-panels3 ul li.active {
+  color: #ffffff;
+  background: #000; }
+
+.tab-panels3 .panel {
+  display: none; }
+
+.tab-panels3 .panel.active {
+  display: block; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+ul.tabs {
+  margin: 20px auto 0 auto;
+  display: flex;
+  border: 2px solid #000;
+  padding: 0; }
+
+ul.tabs li {
+  font: 400 0.8rem "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  padding: 8px; }
+  ul.tabs li:hover {
+    cursor: pointer; }
+
+.tabs-container {
+  display: flex; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  border-radius: 10px;
+  display: block; }
+
+p {
+  line-height: 1.4rem; }
+
+.header-wrapper {
+  width: 100%;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #000;
+  height: auto; }
+
+.header-container {
+  width: 99%;
+  display: grid;
+  height: 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto; }
+  .header-container .title-name, .header-container .title-website {
+    display: flex; }
+    .header-container .title-name h1, .header-container .title-website h1 {
+      margin: auto 20px;
+      letter-spacing: 0.3px;
+      font: 400 1rem "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+      @media all and (max-width: 450px) {
+        .header-container .title-name h1, .header-container .title-website h1 {
+          font: 400 0.8rem "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          margin: auto; } }
+  @media all and (max-width: 500px) {
+    .header-container .title-name h1 {
+      padding-left: 10px; } }
+  @media all and (max-width: 500px) {
+    .header-container .title-website h1 {
+      padding-right: 10px; } }
+
+.main-title {
+  margin-bottom: 50px; }
+  .main-title h2 {
+    padding-left: 10px;
+    font: 500 18px "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
+  @media all and (max-width: 600px) {
+    .main-title {
+      margin-bottom: 30px; }
+      .main-title h2 {
+        padding-left: 0;
+        text-align: center;
+        font: 500 0.9rem "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; } }
+
+/*# sourceMappingURL=ui-sept-main.css.map */

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="pretty-sweet.css">
+<title>pretty sweet</title>
+</head>
+
+<body>
+
+<div class="bag-container">
+    <div> 
+	<img src="ps-images/baggg.png">
+    <p class="also-shake-me">fill me</p>
+</div>
+</div>
+
+<div class="about-block"><p><i>Pretty Sweet</i> is another eCommerce themed website that I have created, based on dessert food. When the user presses/clicks on a product (the dessert images) the product information pop’s up at the top of the screen as heart shapes. Furthermore, I used generic advertising around the website shaped as stars and also created a pastel colour theme for the site.</p></div>
+
+
+<section class="overlay">
+
+	<div class="left over-over">
+		<div>
+			<p>bag</p>
+	    </div>
+	 </div>
+
+	<div class="top over-over"> 
+		<div class="heart-blocker">
+			<div class="heart-block">
+			<p>&#36; &cent; &pound; &yen; &euro;</p><img src="ps-images/heart2.svg">
+			</div>
+
+			<div class="heart-block">
+			<p>product<br>name</p><img src="ps-images/heart2.svg">
+		    </div>
+
+			<div class="heart-block">
+            <p>buy<br>now</p><img src="ps-images/heart2.svg">
+			</div>
+		</div>
+</div>
+
+<!-- <div class="top2"> 
+    <div class="top2-container"> 
+        <div><p> </p></div>
+    </div>
+</div> -->
+
+	<div class="right over-over"> 
+		<div> 
+			<p>about</p>
+		</div>
+	</div>
+	<div class="bottom over-over"> 
+		<p>pretty sweet</p>
+	</div>
+</section>
+
+
+
+<section class="container">
+    <div class="block b-1">
+      <div class="product-1"><img src="ps-images/cake-1.png"></div>
+
+    </div>
+    <div class="block b-2">
+    	<div class="verts"><img src="ps-images/star1.svg"> </div>
+   </div>
+    <div class="block b-3">
+    	 <div class="product-1"><img src="ps-images/cake-4.png"></div>
+    </div>
+    <div class="block b-4">
+         <div class="product-1"><img src="ps-images/ice-cream-1.png"></div>
+
+    </div>
+    <div class="block b-5">
+    	 <div class="product-1"><img src="ps-images/sundae-1.png"></div>
+ 
+    </div>
+    <div class="block b-6">
+    	<div class="verts"><img src="ps-images/star2.svg"> </div>
+    </div>
+    <div class="block b-7">
+    	    <div class="product-1"><img src="ps-images/donut-1.png"></div> 
+
+    </div>
+    <div class="block b-8">
+   	<div class="verts"><img src="ps-images/star3.svg"> </div>
+
+    </div>
+    <div class="block b-9">
+    	  <div class="verts"><img src="ps-images/star4.svg"> </div>
+    </div>
+    <div class="block b-10">
+     <div class="product-1"><img src="ps-images/cookie-1.png"></div>
+    </div>
+    <div class="block b-11">
+    	<!-- ice-cream-2.png -->
+   <div class="product-1"><img src="ps-images/ice-cream-2.png"></div>
+
+    </div>
+    <div class="block b-12">
+    	<div class="product-1"><img src="ps-images/sundae-5.png"></div>
+    </div>
+    <div class="block b-13">
+    	<div class="product-1"><img src="ps-images/donut-3.png"></div> 
+    </div>
+    <div class="block b-14">
+   <div class="product-1"><img src="ps-images/sundae-4.png"></div>
+    </div>
+    <div class="block b-15">
+    	<div class="verts"><img src="ps-images/star5.svg"> </div>
+    </div>
+    <div class="block b-16">
+    	<div class="product-1"><img src="ps-images/donut-2.png"></div> 
+    </div>
+
+        <div class="block b-17">
+       	<div class="product-1"><img src="ps-images/cake-5.png"></div> 
+
+    </div>
+
+    <div class="block b-18">
+       <div class="verts"><img src="ps-images/star6.svg"> </div>
+    </div>
+
+    <div class="block b-19">
+    	     <div class="product-1"><img src="ps-images/donut-4.png"></div> 
+    </div>
+     <div class="block b-20">
+        	<div class="verts"><img src="ps-images/star7.svg"> </div>
+</div>
+    <div class="block b-21">
+        <div> 
+                <div class="product-1"><img src="ps-images/cake-3.png"></div> 
+         </div>
+    </div>
+</section>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script>
+
+  $(function() {
+
+  	  $(".product-1").click(function(){
+        $(".heart-block p,.heart-block img").fadeToggle("slow");
+       
+});
+//      $(".product-1").hover(function(){
+//         $(".heart-block p,.heart-block img").fadeToggle("slow");
+       
+// });	  
+
+ $(".left div p").click(function(){
+        $(".bag-container").fadeToggle("slow");
+});
+
+  $(".right div p").click(function(){
+        $(".about-block").fadeToggle("slow");
+});
+    // $(".product").click(function(){
+    //     $(".heart-block").toggleClass("show-me");
+    // });
+});
+</script>
+</body>
+</html>

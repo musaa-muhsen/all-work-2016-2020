@@ -1,0 +1,176 @@
+* {padding: 0px;
+   margin:0px;
+}
+
+body { background-color: #000000;
+}
+
+.box-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-container img {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  cursor:pointer;
+
+-webkit-animation: moveX 10s linear 0s infinite alternate, 
+  moveY 12s linear 0s infinite normal;
+-moz-animation: moveX 10s linear 0s infinite alternate, 
+  moveY 12s linear 0s infinite normal;
+-o-animation: moveX 10s linear 0s infinite alternate, 
+  moveY 12s linear 0s infinite normal;
+animation: moveX 10s linear 0s infinite alternate, 
+  moveY 12s linear 0s infinite normal;
+}
+
+@-webkit-keyframes moveX {
+  0% {left: 0; } 
+  100% {left:96vw; }
+}
+
+@-moz-keyframes moveX {
+  0% {left: 0; } 
+  100% {left:96vw; }
+}
+
+@-o-keyframes moveX {
+  0% {left: 0; } 
+  100% {left:96vw; }
+}
+
+@keyframes moveX {
+  0% {left: 0; } 
+  100% {left:96vw;}
+}
+
+@-webkit-keyframes moveY {
+ 0% {top:0;} 
+ 3.8% {top:10;}
+ 7.7% {top:20vh;}
+ 11% {top:25;}
+ 15.3% {top:40vh;}
+ 19% {top:60;}
+ 22.3% {top:75vh;}
+ 26% {top:84vh;}
+ 29.3% {top:70vh;}
+ 33.5% {top:50vh;}
+ 37% {top:40vh;}
+ 41% {top:20vh;}
+ 44.7% {top:10vh;}
+ 48% {top:0;}
+ 52.4% {top:10vh;}
+ 56% {top:20vh;}
+ 60.1% {top:40vh;}
+ 64% {top:50vh;}
+ 67.8% {top:65vh;}
+ 71% {top:84vh;}
+ 75.5% {top:70vh;}
+ 80% {top:55vh;}
+ 83.2% {top:40vh;}
+ 90% {top:30vh;}
+ 92.5% {top:20vh;}
+ 95% {top:10vh;}
+ 100% {top:0vh;}
+}
+
+@-moz-keyframes moveY {
+ 0% {top:0;} 
+ 3.8% {top:10;}
+ 7.7% {top:20vh;}
+ 11% {top:25;}
+ 15.3% {top:40vh;}
+ 19% {top:60;}
+ 22.3% {top:75vh;}
+ 26% {top:84vh;}
+ 29.3% {top:70vh;}
+ 33.5% {top:50vh;}
+ 37% {top:40vh;}
+ 41% {top:20vh;}
+ 44.7% {top:10vh;}
+ 48% {top:0;}
+ 52.4% {top:10vh;}
+ 56% {top:20vh;}
+ 60.1% {top:40vh;}
+ 64% {top:50vh;}
+ 67.8% {top:65vh;}
+ 71% {top:84vh;}
+ 75.5% {top:70vh;}
+ 80% {top:55vh;}
+ 83.2% {top:40vh;}
+ 90% {top:30vh;}
+ 92.5% {top:20vh;}
+ 95% {top:10vh;}
+ 100% {top:0vh;}
+}
+
+@-o-keyframes moveY {
+0% {top:0;} 
+ 3.8% {top:10;}
+ 7.7% {top:20vh;}
+ 11% {top:25;}
+ 15.3% {top:40vh;}
+ 19% {top:60;}
+ 22.3% {top:75vh;}
+ 26% {top:84vh;}
+ 29.3% {top:70vh;}
+ 33.5% {top:50vh;}
+ 37% {top:40vh;}
+ 41% {top:20vh;}
+ 44.7% {top:10vh;}
+ 48% {top:0;}
+ 52.4% {top:10vh;}
+ 56% {top:20vh;}
+ 60.1% {top:40vh;}
+ 64% {top:50vh;}
+ 67.8% {top:65vh;}
+ 71% {top:84vh;}
+ 75.5% {top:70vh;}
+ 80% {top:55vh;}
+ 83.2% {top:40vh;}
+ 90% {top:30vh;}
+ 92.5% {top:20vh;}
+ 95% {top:10vh;}
+ 100% {top:0vh;}
+}
+
+@keyframes moveY {
+ 0% {top:0;} 
+ 3.8% {top:10;}
+ 7.7% {top:20vh;}
+ 11% {top:25;}
+ 15.3% {top:40vh;}
+ 19% {top:60;}
+ 22.3% {top:75vh;}
+ 26% {top:84vh;}
+ 29.3% {top:70vh;}
+ 33.5% {top:50vh;}
+ 37% {top:40vh;}
+ 41% {top:20vh;}
+ 44.7% {top:10vh;}
+ 48% {top:0;}
+ 52.4% {top:10vh;}
+ 56% {top:20vh;}
+ 60.1% {top:40vh;}
+ 64% {top:50vh;}
+ 67.8% {top:65vh;}
+ 71% {top:84vh;}
+ 75.5% {top:70vh;}
+ 80% {top:55vh;}
+ 83.2% {top:40vh;}
+ 90% {top:30vh;}
+ 92.5% {top:20vh;}
+ 95% {top:10vh;}
+ 100% {top:0vh;}
+}
+
+@media only screen and (max-width: 660px) {
+.box-container img {
+  width: 100px;
+  height: 100px;}
+ }
+

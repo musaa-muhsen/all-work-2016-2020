@@ -1,0 +1,53 @@
+.vid-bold {
+text-decoration: underline;
+}
+.vid-320 {
+width: 100%;
+}
+.vid-320 article {
+display: block;
+width: 320px;
+height: auto;
+
+}
+
+.vid-320 article:nth-child(1) {
+margin: 50px auto 50px auto;
+}
+
+.vid-320 article:nth-child(2) {
+	margin: 50px auto 50px auto;
+}
+
+   .vid-640 article {
+	display: none;
+	
+
+} 
+
+@media all and (min-width:650px) {
+    .vid-640 article {
+	width: 640px;
+	height: auto;
+	display: block;
+	
+
+} 
+
+.vid-640 article:nth-child(1) {
+    margin: 100px auto 100px auto;
+}
+
+.vid-640 article:nth-child(2) {
+	margin: 100px auto 100px auto;
+}
+.vid-640 {
+	width: 100%;
+}
+.vid-320 {
+	display: none;
+}
+}
+
+
+

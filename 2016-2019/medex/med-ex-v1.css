@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=UnifrakturMaguntia");
+:root {
+  font-size: calc(1vw + 1vh + .25vmin); }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #FF0000;
+  font: 1em/1.75 'UnifrakturMaguntia', cursive;
+  background-image: url("medexsvg2/the-painting-copy.jpg");
+  background-repeat: repeat; }
+
+div.black {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  background-image: none !important;
+  -webkit-animation: fadeIt 7s linear 1;
+          animation: fadeIt 7s linear 1; }
+
+@-webkit-keyframes fadeIt {
+  0% {
+    background-color: #000; }
+  100% {
+    background-color: none; } }
+
+@keyframes fadeIt {
+  0% {
+    background-color: #000; }
+  100% {
+    background-color: none; } }
+section.image-container {
+  width: 500px;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  @media all and (max-width: 500px) {
+    section.image-container {
+      width: 100%; } }
+  section.image-container div {
+    height: 14.2857142857vh;
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media all and (max-width: 500px) {
+      section.image-container div {
+        width: 100%; } }
+    section.image-container div .block {
+      margin: auto;
+      display: block; }
+      @media all and (max-width: 500px) {
+        section.image-container div .block {
+          width: 100%;
+          height: auto; } }
+
+/*
+section.image-container {
+
+ width: 100%;
+ height: auto; 
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ z-index: 140;
+ display: flex;
+ flex-direction: column;
+   .block {
+
+   display: block;
+  margin-bottom: 3vh;
+        }
+article {
+  margin-top: 100px;
+
+width: 100%;
+height: 100%;
+background: blue;
+
+}
+}*/
+
+/*# sourceMappingURL=med-ex-v1.css.map */

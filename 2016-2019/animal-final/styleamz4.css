@@ -1,0 +1,239 @@
+* { 
+	margin: 0;
+	padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*outline: red solid 1px;*/
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Alegreya', serif;
+  background-color: #FAEBD7;
+  color: #000000; 
+}
+
+ img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+li:hover a, li:active a {
+  text-decoration: underline;
+}
+
+li {
+  list-style: none;
+}
+/*----------------  title ------------*/
+header.main-header {
+   max-width: 840px;
+   margin: 0 auto 40px auto;
+}
+
+header h1 {
+  margin-top: 40px;
+  padding: 0 0 20px 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px; 
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+
+
+
+/*----------------  nav ------------*/
+.menu {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  height: 180px;
+  width:840px;
+  margin: 0 auto;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+
+}
+.menu li {
+  cursor: pointer;
+  position: relative;
+  height: 180px;
+  width: 120px;
+}
+.menu a {
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-direction: normal;
+-moz-box-direction: normal;
+-webkit-box-orient: vertical;
+-moz-box-orient: vertical;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+}
+
+li h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  max-width: 100%;
+  text-align: center;
+}
+li .link-image {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/*----------------- main ----------*/
+
+.block {
+  
+  width: 840px;
+  height: 320px;
+  margin: 70px auto 0 auto;
+  overflow: hidden;
+}
+
+aside.left {
+  position: relative;
+  float: left;
+  width: 400px;
+  height: 320px;
+}
+aside h2 {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+aside img {
+position: absolute; 
+bottom: 0;
+right: 0;
+}
+aside.right {
+  float: right;
+  width: 400px;
+  height: 320px;
+}
+
+/*--------------- footer ------------*/
+footer {
+  height: 3rem;
+  width: 840px;
+  font-size: 1rem;
+  margin: 60px auto 30px auto;
+  text-align: center;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/*--------------- footer ------------*/
+
+
+@media only screen and (max-width: 840px) {
+
+ header.main-header {
+  max-width: 100%;
+}
+
+header h1 {
+  font-size: 1.7rem;
+}
+
+.menu {
+  width: 100%;
+  height: 10rem;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.menu li {
+  height: 1rem;
+  width: 100%;
+}
+
+.menu a {
+  -webkit-flex: none;
+  flex: none;
+}
+li .link-image {
+  display: none;
+}
+
+.block {
+  overflow: visible;
+  margin:30px auto 0 auto;
+  width: 90%;
+  height: 700px;
+}
+
+aside.left {
+  height: auto;
+  float: none;
+  width: 100%;
+}
+
+aside h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+}
+
+aside.right {
+    
+  margin: 30px 0 0 0;
+  height: auto;
+  width: 100%;
+}
+
+aside h2, aside.left img {
+  position: static;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  height: 3rem;
+  display: block;
+  margin: 0 0 30px 0;
+}
+.main-header {
+  margin: 0;
+}
+header h1 {
+  margin-top: 20px;
+}
+
+
+}
+
+
+
+
+
+

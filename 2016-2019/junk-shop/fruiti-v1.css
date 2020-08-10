@@ -1,0 +1,162 @@
+:root {
+  font-size: calc(1vw + 1vh + .25vmin); }
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  cursor: url(pointer/pointer-mine.png), pointer; }
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #000;
+  font-size: 2.3em;
+  background: #ffcbff; }
+  @media all and (max-width: 500px) {
+    body {
+      font-size: 2em; } }
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.block {
+  width: 100%;
+  height: 8.33333vh;
+  position: relative; }
+
+.looks-better {
+  display: none; }
+  @media all and (max-width: 450px) {
+    .looks-better {
+      text-align: center;
+      font-size: 1rem;
+      display: block;
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      width: 100%; } }
+
+.line {
+  position: absolute;
+  top: 0;
+  width: 3000px;
+  background: #FFF;
+  padding-bottom: 0.7%; }
+
+.line-1 {
+  left: -10vw;
+  transform: rotate(-3deg);
+  transform-origin: 5% 0;
+  animation: lone 9s ease 0.1s infinite; }
+
+.line-2 {
+  left: -5vw;
+  transform: rotate(3deg);
+  transform-origin: 0% 0;
+  animation: ltwo 9s ease 0.3s infinite; }
+
+.line-3 {
+  left: -4vw;
+  transform: rotate(-3deg);
+  transform-origin: 5% 0;
+  animation: lthree 9s ease 0.3s infinite; }
+
+.line-4 {
+  left: -9vw;
+  transform: rotate(-3deg);
+  transform-origin: 5% 0;
+  animation: lfour 9s ease 0.3s infinite; }
+
+.line-5 {
+  left: -7vw;
+  transform: rotate(3deg);
+  transform-origin: 5% 0;
+  animation: lfive 9s ease 0.3s infinite; }
+
+@keyframes lone {
+  0% {
+    color: #FFF;
+    background: #000; }
+  25% {
+    color: #000;
+    background: #FFF; }
+  50% {
+    color: #000;
+    background: #FFF; }
+  75% {
+    color: #000;
+    background: #FFF; }
+  100% {
+    color: #000;
+    background: #FFF; } }
+@keyframes ltwo {
+  0% {
+    color: #000;
+    background: #FFF; }
+  25% {
+    color: #FFF;
+    background: #000; }
+  50% {
+    color: #000;
+    background: #FFF; }
+  75% {
+    color: #000;
+    background: #FFF; }
+  100% {
+    color: #000;
+    background: #FFF; } }
+@keyframes lthree {
+  0% {
+    color: #000;
+    background: #FFF; }
+  25% {
+    color: #000;
+    background: #FFF; }
+  50% {
+    color: #FFF;
+    background: #000; }
+  75% {
+    color: #000;
+    background: #FFF; }
+  100% {
+    color: #000;
+    background: #FFF; } }
+@keyframes lfour {
+  0% {
+    color: #000;
+    background: #FFF; }
+  25% {
+    color: #000;
+    background: #FFF; }
+  50% {
+    color: #000;
+    background: #FFF; }
+  75% {
+    color: #FFF;
+    background: #000; }
+  100% {
+    color: #000;
+    background: #FFF; } }
+@keyframes lfive {
+  0% {
+    color: #000;
+    background: #FFF; }
+  25% {
+    color: #000;
+    background: #FFF; }
+  50% {
+    color: #000;
+    background: #FFF; }
+  75% {
+    color: #000;
+    background: #FFF; }
+  100% {
+    color: #FFF;
+    background: #000; } }
+
+/*# sourceMappingURL=fruiti-v1.css.map */

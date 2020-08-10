@@ -1,0 +1,465 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800');
+
+:root {
+  font-family: 'Open Sans', sans-serif;
+  font-size: calc(1vw + 1vh + .25vmin);
+};
+
+body {font: 1em/1.75 'Open Sans', sans-serif;}
+
+/*------------------- side-nav-open ---------------------*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFFF00;
+    overflow-x: hidden;
+    -webkit-transition: 2s ease-in-out;
+    -moz-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.sidenav > a {
+	position: absolute;
+}
+
+.to-where, .to-space, .back-home, .to-bed {
+	font-weight: 700;
+
+}
+
+.to-where {
+left: 34%;
+top: 43%;
+transform: rotate(21deg);
+-webkit-transform: rotate(21deg);
+transform: rotate(21deg);
+}
+
+.to-space {
+left: 70%;
+top: 40%;
+-webkit-transform: rotate(19deg);
+-moz-transform: rotate(19deg);
+transform: rotate(19deg);
+}
+
+.back-home {
+left: 40%;
+top: 25%;
+-moz-transform: rotate(-13deg);
+-webkit-transform: rotate(-13deg);
+transform: rotate(-13deg);
+}
+
+.to-bed {
+left: 55%;
+top: 69%;
+-webkit-transform: rotate(-20deg);
+-moz-transform: rotate(-20deg);
+transform: rotate(-20deg);
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #FFFF00;
+}
+
+.closebtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    font-size: 5rem;
+    font-weight: 700;
+}
+/*------------------- aside-container ---------------------*/
+
+aside.aside-container {
+	float: left;
+	height: 100vh;
+	width: 30%;
+    background: #FFFF00;
+}
+
+/*------------------- aside-nav ---------------------*/
+
+nav.nav {
+	display: -webkit-box;
+    display: -moz-box;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+    -webkit-justify-content: center;
+	justify-content: center;
+    -webkit-align-items: center;
+	align-items: center;
+	width: 100%;
+	height: 20vh;
+	
+}
+
+.burger-menu {
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+	width: 75px;
+	height: 70px;
+}
+
+.bar1, .bar2, .bar3 {
+     width: 50px;
+     height: 4px;
+     background: black;
+     margin: 8px 0;
+}
+
+/*------------------- aside-logo ---------------------*/
+
+header.logo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  float: left;
+}
+.logo-box {	
+	position: relative;
+    height: 80vh;
+	width: 30%;
+}
+.logo h1 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.one {
+	position: absolute;
+	top:10%;
+	left:30%;
+	-webkit-transform: rotate(14deg);
+    -moz-transform: rotate(14deg);
+	transform: rotate(14deg);
+}
+.two {
+	position: absolute;
+	top:30%;
+	left:55%;
+	-webkit-transform: rotate(-200deg);
+	-moz-transform: rotate(-200deg);
+	transform: rotate(-200deg);
+}
+.three {
+	position: absolute;
+	top:50%;
+	left:0%;
+    -webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.four {
+	position: absolute;
+	top:70%;
+	left:40%;
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+/*------------------- main ---------------------*/
+
+section.main {
+	float: right;
+	width: 70%;
+	height: 100vh;
+}
+
+/*------------------- header ---------------------*/
+header.title {
+	height: 30vh;
+	position: relative;
+
+}
+p.title-writing {
+	position: absolute;
+	top:40%;
+	left:15%;
+    -webkit-transform: rotate(9deg);
+	-moz-transform: rotate(9deg);
+    transform: rotate(9deg);
+	max-width: 70%;
+    font-size: 1.2rem;
+	font-weight: 700;
+}
+
+/*------------------- article ---------------------*/
+h2 { 
+	max-width: 70%;
+	font-weight: 700;
+}
+
+p.main-writing {
+	font-size: 1rem;
+	max-width: 70%;
+	
+}
+.the-twist {
+	max-width: 80%;
+	position: absolute;
+	top:15%;
+	left:15%;
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	transform: rotate(-6deg);
+}
+article.middle {
+	position: relative;
+    height: 50vh;
+	max-width: 99%;
+}
+/*------------------- footer ---------------------*/
+
+footer {
+	font-weight: 700;
+	position: relative;
+	height: 20vh;
+	width: 100%;
+}
+
+footer > span {
+	position: absolute;
+}
+.date {
+	
+  font-size: 2rem;
+  left: 16%;
+  top: 24%;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.coprights {
+   left: 40%;
+   top: 14%;
+   -webkit-transform: rotate(-30deg);
+   -moz-transform: rotate(-30deg);
+   transform: rotate(-30deg);
+   font-weight: 700;
+   font-size: 3rem;
+  
+}
+
+.name {
+  font-size: 2rem;
+  left: 53%;
+  top: 4%;
+  -webkit-transform: rotate(-9deg);
+  -moz-transform: rotate(-9deg);
+  transform: rotate(-9deg);
+}
+/*------------- @media ---------------------*/
+@media only screen and (max-width: 1000px) {
+	.to-where {
+left: 25%;
+top: 43%;
+}
+
+.bar1, .bar2, .bar3 {
+     width: 40px;
+     height: 3px;
+     background: #000000;
+     margin: 6px 0;
+}
+
+}
+@media only screen and (max-width:500px) {
+.bar1, .bar2, .bar3 {
+     width: 30px;}
+
+aside.aside-container {
+	float: none;
+	width: 100vw;
+	height: 90vh;
+
+}
+.logo-box {	
+	position: relative;
+
+   height: 60vh;
+	width: 30%;
+}
+nav.nav {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 20vh;
+	
+}
+
+.burger-menu {
+	position: absolute;
+	left: 10%;
+	top: 40%;
+	
+}
+
+section.main {
+	float: none;
+	width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.the-twist h2 {
+	font-size: 1.7rem;
+}
+p.main-writing {
+	
+	font-size: 1.2rem;
+	max-width: 90%;
+}
+.the-twist {
+	top:33%;
+	left:15%;
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+footer {
+	height: 20vh;
+}
+
+
+.date {
+	
+  left: 5%;
+  top: 29%;
+  
+  -webkit-transform: rotate(-20deg);
+   -moz-transform: rotate(-20deg);
+   transform: rotate(-20deg);
+}
+
+.coprights {
+   left: 30%;
+   top: 29%;
+      
+   -webkit-transform: rotate(-30deg);
+   -moz-transform: rotate(-30deg);
+   transform: rotate(-30deg);
+   
+}
+
+.name {
+  
+  left: 46%;
+  top: 34%;
+  -webkit-transform: rotate(19deg);
+  -moz-transform: rotate(19deg);
+  transform: rotate(19deg);
+}
+
+p.title-writing {
+	top:73%;
+	left:13%;}
+
+.new-twist-zero {
+	width: 100vw;
+	height: 12vh;
+	background:#FFFF00;
+	 -webkit-transform: skew(0deg, -9deg);
+	 -moz-transform: skew(0deg, -9deg);
+     transform: skew(0deg, -9deg);
+ 	 position: absolute;
+	 top: 84vh;
+}
+
+.new-twist-one {
+	width: 100vw;
+	height: 11vh;
+	background: #FFFF00;
+	-webkit-transform: skew(0deg, 9deg);
+	-moz-transform: skew(0deg, 9deg);
+	transform: skew(0deg, 9deg);
+	position: absolute;
+	top: 20%;
+}
+.new-twist-two {
+	width: 100vw;
+	height: 32vh;
+	background: #FFFF00;
+    
+	 -webkit-transform: skew(0deg, -6deg);
+	 -moz-transform: skew(0deg, -6deg);
+     transform: skew(0deg, -6deg);
+	 position: absolute;
+	 top: 42%;
+}
+.new-twist-three {
+	width: 100vw;
+	height: 13vh;
+	background: #FFFF00;
+	
+	 -webkit-transform: skew(0deg, 8deg);
+	 -moz-transform: skew(0deg, 8deg);
+     transform: skew(0deg, 8deg);
+	 position: absolute;
+	 top: 83%;
+}
+
+.to-space {
+left: 60%;
+top: 45%;
+}
+
+.back-home {
+left: 40%;
+top: 38%;
+}
+
+.to-bed {
+left: 39%;
+top: 64%;
+}
+.to-where {
+left: 14%;
+top: 43%;
+}
+.closebtn {
+    top: 50%;
+    left: 40%;
+   
+}
+}

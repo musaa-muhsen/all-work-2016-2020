@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="med-ex-v1.css">
+<title>M E D E X</title>
+<style>
+
+
+</style>
+</head>
+
+<body>
+  
+
+<!-- <img class="one" src="medexsvg2/the-painting-copy.jpg">  -->
+
+<div class="black two"> </div>
+
+ <section class="image-container">
+ 
+  <div><img class="b1 block" src="medexsvg2/medexb1.svg"></div>
+  <div><img class="b2 block" src="medexsvg2/medexb2.svg"></div>
+  <div><img class="b3 block" src="medexsvg2/medexb3.svg"></div>
+  <div><img class="b4 block" src="medexsvg2/medexb4.svg"></div>
+  <div><img class="b5 block" src="medexsvg2/medexb5.svg"></div>
+  <div><img class="b6 block" src="medexsvg2/medexb6.svg"></div>
+  <div><img class="b7 block" src="medexsvg2/medexb7.svg"></div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/easing/EasePack.min.js">
+</script>
+
+
+<script>
+
+var drop1 = $('.b1');
+var drop2 = $('.b2'); 
+var drop3 = $('.b3');
+var drop4 = $('.b4');
+var drop5 = $('.b5'); 
+var drop6 = $('.b6');
+var drop7 = $('.b7');
+
+
+
+tl = new TimelineLite();
+
+tl 
+  .from(drop1, 0.4, {y:-25, autoAlpha:0, ease:Power1.easeOut})
+  .from(drop2, 0.3, {y:-25, autoAlpha:0, ease:Power1.easeOut},'-=0.15')
+  .from(drop3, 0.3, {y:-25, autoAlpha:0, ease:Power1.easeOut},'-=0.15')
+  .from(drop4, 0.3, {y:-25, autoAlpha:0, ease:Power1.easeOut},'-=0.15')
+  .from(drop5, 0.3, {y:-25, autoAlpha:0, ease:Power1.easeOut},'-=0.15')
+  .from(drop6, 0.3, {y:-25, autoAlpha:0, ease:Power1.easeOut},'-=0.15')
+  .from(drop7, 0.3, {y:-25, autoAlpha:0, ease:Power1.easeOut},'-=0.15');
+
+
+
+ 
+</script>
+</body>
+</html>

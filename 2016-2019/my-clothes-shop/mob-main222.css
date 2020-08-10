@@ -1,0 +1,476 @@
+/*MintCream 	#F5FFFA
+MistyRose 	#FFE4E1
+DarkTurquoise 	#00CED1*/
+/*====================== main structure ==================== */
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+.bg-main {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -100; }
+  @media all and (max-width: 500px) {
+    .bg-main {
+      display: none; } }
+
+section.slideshow-title-wrapper {
+  flex: 1 60%;
+  display: flex;
+  flex-flow: column wrap; }
+  section.slideshow-title-wrapper .title-main {
+    height: 69.1px;
+    display: flex; }
+    @media all and (max-width: 500px) {
+      section.slideshow-title-wrapper .title-main {
+        height: 10vh; } }
+    section.slideshow-title-wrapper .title-main div {
+      font-size: 1rem;
+      margin: auto; }
+      @media all and (max-width: 400px) {
+        section.slideshow-title-wrapper .title-main div {
+          font-size: 0.8rem; } }
+
+header, footer {
+  height: 59.1px;
+  width: 100%; }
+  @media all and (max-width: 500px) {
+    header, footer {
+      height: 8.5vh; } }
+
+.whole-container {
+  font-size: 1rem;
+  background: #BD62FF;
+  width: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  z-index: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  @media all and (max-width: 500px) {
+    .whole-container {
+      width: 100%; } }
+
+.wrapper {
+  position: relative;
+  display: flex;
+  height: 552.8px; }
+  @media all and (max-width: 500px) {
+    .wrapper {
+      height: 79vh; } }
+
+.menu, .about, .bag {
+  cursor: pointer;
+  display: block; }
+
+.menu, .about, .bag, .buy, .close-menu, .close-about
+, .close-bag {
+  position: relative;
+  width: 50px;
+  height: 50px; }
+  .menu span.bg-circle, .about span.bg-circle, .bag span.bg-circle, .buy span.bg-circle, .close-menu span.bg-circle, .close-about
+  span.bg-circle, .close-bag span.bg-circle {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .menu .writing-link, .about .writing-link, .bag .writing-link, .buy .writing-link, .close-menu .writing-link, .close-about
+  .writing-link, .close-bag .writing-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.close-menu, .close-about, .close-bag {
+  display: none;
+  cursor: pointer; }
+
+section {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%; }
+  @media all and (max-width: 500px) {
+    section {
+      width: 100%; } }
+
+.mySlides {
+  display: none;
+  margin: auto; }
+  @media all and (max-width: 400px) {
+    .mySlides {
+      width: 120px; } }
+  .mySlides .title-main {
+    height: 69.1px;
+    width: 100%; }
+    @media all and (max-width: 500px) {
+      .mySlides .title-main {
+        height: 10vh; } }
+
+.slideshow-container {
+  height: 276.4px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media all and (max-width: 500px) {
+    .slideshow-container {
+      height: 40vh; } }
+
+/* ============================== Caption text =============================  */
+.text-container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: -160px;
+  width: 100%; }
+  .text-container .clothes-name {
+    padding: 2% 0; }
+  .text-container .price {
+    padding: 2% 0; }
+  .text-container .clothes-size {
+    padding: 2% 0; }
+  .text-container .clothes-description {
+    padding: 2% 2%; }
+
+.text-container-bg {
+  position: absolute;
+  left: 0;
+  bottom: -180px;
+  width: 100%; }
+
+/* ================================ Fading animation ====================== */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+/*========================= next prev btn aside ============*/
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 20%;
+  height: 552.8px; }
+  @media all and (max-width: 500px) {
+    aside {
+      height: 80vh; } }
+  aside a {
+    display: block; }
+    aside a img {
+      display: block;
+      margin: auto;
+      cursor: pointer; }
+      @media all and (max-width: 400px) {
+        aside a img {
+          max-width: 70%; } }
+    aside a img.previmage {
+      animation: prev 2s linear 0s infinite alternate; }
+      aside a img.previmage:hover {
+        animation-play-state: paused; }
+    aside a img.nextimage {
+      animation: next 2s linear 0s infinite alternate; }
+      aside a img.nextimage:hover {
+        animation-play-state: paused; }
+
+@keyframes prev {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.3); } }
+@keyframes next {
+  0% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+/*============== footer =========*/
+.header-main, footer {
+  color: #A4FF62;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media all and (max-width: 400px) {
+    .header-main, footer {
+      font-size: 1.2rem; } }
+  .header-main .left-side, footer .left-side {
+    padding-left: 4%; }
+  .header-main .right-side, footer .right-side {
+    padding-right: 4%; }
+
+/*============== phone icon container =========*/
+.phone-icon-container {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media all and (max-width: 500px) {
+    .phone-icon-container {
+      height: 4vh;
+      padding-right: 2%;
+      padding-left: 2%;
+      padding-top: 1vh; } }
+  .phone-icon-container .signal, .phone-icon-container .time, .phone-icon-container .battery {
+    width: 60px; }
+  .phone-icon-container .time {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 0.9rem; }
+  .phone-icon-container .battery {
+    display: flex;
+    justify-content: flex-end; }
+    @media all and (max-width: 400px) {
+      .phone-icon-container .battery img {
+        width: 50%; } }
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  color: #A4FF62;
+  background: #FFF176;
+  font-family: "Merriweather", "Times New Roman", Times, serif;
+  font-size: 0.9rem;
+  font-weight: 400; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+/* ===================== marquee ===========================*/
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  height: auto; }
+  .marquee span.right2left {
+    display: inline-block;
+    text-indent: 0;
+    animation: rightToleft 600s linear infinite;
+    padding-left: 0; }
+
+@keyframes rightToleft {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-100%, 0); } }
+/* ===================== menu main ===========================*/
+.menu-container, .about-container {
+  z-index: 3000;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 621.9px;
+  background: #BD62FF; }
+  @media all and (max-width: 500px) {
+    .menu-container, .about-container {
+      height: 90vh; } }
+
+.menu-container-wrapper {
+  background: #BD62FF;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-flow: column wrap; }
+  @media all and (max-width: 500px) {
+    .menu-container-wrapper {
+      width: 90%;
+      margin: 0 auto; } }
+
+.search-line {
+  width: 100%; }
+  .search-line img {
+    display: block;
+    margin: 5px auto 0 auto; }
+
+.search-wrapper {
+  height: 103.65px;
+  width: 100%; }
+  @media all and (max-width: 500px) {
+    .search-wrapper {
+      height: 15vh; } }
+  .search-wrapper .search-container {
+    margin: 1% auto 0 auto;
+    width: 100%;
+    display: flex;
+    height: auto; }
+    .search-wrapper .search-container article:nth-child(1) {
+      flex: 1 70%;
+      order: 1;
+      position: relative; }
+      .search-wrapper .search-container article:nth-child(1) span {
+        position: absolute;
+        left: 10%;
+        bottom: 10%; }
+    .search-wrapper .search-container article:nth-child(2) {
+      flex: 1 30%;
+      display: flex;
+      order: 1; }
+      .search-wrapper .search-container article:nth-child(2) div {
+        display: flex;
+        margin: auto; }
+        .search-wrapper .search-container article:nth-child(2) div img {
+          margin: auto; }
+          @media all and (max-width: 400px) {
+            .search-wrapper .search-container article:nth-child(2) div img {
+              max-width: 70%; } }
+
+.bg-cat {
+  margin-bottom: 5vh;
+  position: relative; }
+  .bg-cat img {
+    display: block; }
+  .bg-cat .cat-container {
+    width: 100%;
+    color: #BD62FF;
+    position: absolute;
+    top: 2vh;
+    left: 0; }
+    .bg-cat .cat-container p {
+      padding: 1vh 0 1vh 4%; }
+    .bg-cat .cat-container .cat-table {
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap; }
+      .bg-cat .cat-container .cat-table article {
+        flex: 1 33.33333%; }
+        .bg-cat .cat-container .cat-table article div {
+          font-size: 0.8rem;
+          padding: 1vh 0; }
+
+.table {
+  font-size: 0.8rem;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 207.3px; }
+  @media all and (max-width: 500px) {
+    .table {
+      height: 30vh;
+      overflow: auto; } }
+  .table .column {
+    text-align: center;
+    flex: 1 33.33333%; }
+    .table .column .profile-name, .table .column .rating-name, .table .column .sold-name {
+      height: 34.55px;
+      display: flex; }
+      @media all and (max-width: 500px) {
+        .table .column .profile-name, .table .column .rating-name, .table .column .sold-name {
+          height: 5vh; } }
+      .table .column .profile-name span, .table .column .rating-name span, .table .column .sold-name span {
+        margin: auto; }
+    .table .column .profile-name {
+      position: relative; }
+      .table .column .profile-name::after {
+        position: absolute;
+        left: 10%;
+        top: 63%;
+        content: url("clothes/hr-12.svg"); }
+        @media all and (max-width: 400px) {
+          .table .column .profile-name::after {
+            content: url("clothes/hr-1222.svg"); } }
+    .table .column .profile-detail {
+      height: 34.55px;
+      display: flex;
+      position: relative; }
+      .table .column .profile-detail span {
+        margin: auto; }
+      .table .column .profile-detail::after {
+        position: absolute;
+        left: 10%;
+        top: 63%;
+        content: url("clothes/hr-12.svg"); }
+        @media all and (max-width: 400px) {
+          .table .column .profile-detail::after {
+            content: url("clothes/hr-1222.svg"); } }
+    .table .column .rating-detail {
+      height: 34.55px;
+      display: flex; }
+      .table .column .rating-detail .rating-hearts-container {
+        width: 80px;
+        height: 34.55px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .table .column .rating-detail .rating-hearts-container div {
+          display: flex;
+          height: 10px;
+          width: 10px; }
+          .table .column .rating-detail .rating-hearts-container div img {
+            margin: auto; }
+    .table .column .rating-name {
+      position: relative; }
+      .table .column .rating-name::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: url("clothes/hr-32.svg"); }
+    .table .column .sold-name {
+      position: relative; }
+      .table .column .sold-name::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: url("clothes/hr-42.svg"); }
+
+.profile-detail-last, .sold-detail {
+  height: 34.55px;
+  display: flex; }
+  .profile-detail-last span, .sold-detail span {
+    margin: auto; }
+
+/*==================== about container ===================*/
+.about-container .about-container-wrapper {
+  background: #BD62FF;
+  height: 100%;
+  width: 100%;
+  display: flex; }
+  .about-container .about-container-wrapper .about-words {
+    margin: auto;
+    line-height: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%; }
+
+/*====================== bag conntainer ========================*/
+.bag-container {
+  z-index: 3000;
+  display: none;
+  position: absolute;
+  top: -69.1px;
+  left: 0;
+  width: 100%;
+  height: 621.9px;
+  background: #FFF; }
+  @media all and (max-width: 500px) {
+    .bag-container {
+      top: -10vh; } }
+  @media all and (max-width: 500px) {
+    .bag-container {
+      height: 90vh; } }
+  .bag-container .bag-container-wrapper {
+    background: #BD62FF;
+    height: 100%;
+    width: 100%;
+    display: flex; }
+    .bag-container .bag-container-wrapper .bag-words {
+      margin: auto;
+      line-height: auto;
+      font-size: 1.2rem;
+      text-align: center; }
+
+/*# sourceMappingURL=mob-main222.css.map */

@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i");
+.mobile-phone {
+  position: fixed;
+  right: 0;
+  top: 140px; }
+  .mobile-phone p {
+    font: italic 400 1.5rem "Cormorant", serif;
+    height: 100px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+@media all and (max-width: 720px) {
+  .mobile-phone {
+    display: none; } }
+.hidden-menu {
+  display: none;
+  width: 100%;
+  grid-row: 1/ span 1;
+  grid-column: 1 / span 1;
+  z-index: 100;
+  background: #ffffff;
+  font: 700 1rem Helvetica, Arial, "Lucida Grande", sans-serif; }
+  @media all and (max-width: 508px) {
+    .hidden-menu {
+      font: 700 0.7rem Helvetica, Arial, "Lucida Grande", sans-serif; } }
+  .hidden-menu ul {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .hidden-menu ul li a {
+      margin: auto;
+      width: 100%;
+      display: block;
+      height: auto; }
+      .hidden-menu ul li a img {
+        display: block;
+        margin: 0 auto 10px auto;
+        width: 90px; }
+        @media all and (max-width: 508px) {
+          .hidden-menu ul li a img {
+            width: 60px; } }
+      .hidden-menu ul li a p {
+        text-align: center; }
+
+.link-block {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .link-block a:hover img {
+    opacity: 0.5; }
+
+.hidden-menu-display {
+  display: block; }
+
+.aside {
+  grid-template-columns: 1fr 3px 1fr 3px 1fr 3px 1fr;
+  grid-template-rows: 1fr;
+  display: grid;
+  padding: 34% 0 34% 0; }
+  .aside .block-real {
+    background: #000; }
+
+.about-main-content {
+  font: 700 1rem Helvetica, Arial, "Lucida Grande", sans-serif;
+  width: 100%; }
+  .about-main-content .about-writing {
+    line-height: 22px;
+    padding: 0 5% 0 5%;
+    margin: 30px 0 30px 0; }
+  .about-main-content .about-links {
+    line-height: 30px;
+    margin: 0 0 30px 0; }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+li {
+  list-style-type: none; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+html {
+  font-size: 16px;
+  background-color: #ffffff; }
+
+body {
+  width: 100%; }
+
+.hidden-menu ul li a img.smaller {
+  width: 70px; }
+
+.wrapper {
+  overflow: hidden;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 3px #000 solid;
+  margin: 100px auto 100px auto;
+  width: 500px;
+  height: auto; }
+  @media all and (max-width: 508px) {
+    .wrapper {
+      border: none;
+      width: 100%;
+      margin: 0; } }
+
+.header-container {
+  margin-top: 20px;
+  width: 100%;
+  height: auto; }
+  .header-container .line-header {
+    margin-top: 10px;
+    height: 3px;
+    display: grid;
+    grid-template-columns: 4% 1fr 4%; }
+    @media all and (max-width: 508px) {
+      .header-container .line-header {
+        grid-template-columns: 5% 1fr 5%; } }
+    .header-container .line-header .line-real {
+      background: #000; }
+  .header-container ul {
+    text-transform: uppercase;
+    font: 400 1rem "Cormorant", serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center; }
+    .header-container ul li {
+      display: grid; }
+      .header-container ul li p, .header-container ul li a {
+        place-self: center; }
+    .header-container ul li:nth-child(1), .header-container ul li:nth-child(3) {
+      font: 400 1rem "Cormorant", serif; }
+    .header-container ul li:nth-child(2) {
+      font: 700 1rem "Cormorant", serif;
+      letter-spacing: 1px;
+      text-align: center; }
+    .header-container ul li:nth-child(1):hover {
+      cursor: pointer; }
+
+.section-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 80px 1fr 80px; }
+  .section-container .main-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
+    .section-container .main-content-wrapper .main-content {
+      grid-row: 1/ span 1;
+      grid-column: 1/ span 1;
+      width: 100%;
+      text-align: center; }
+      .section-container .main-content-wrapper .main-content .picture {
+        display: grid;
+        margin: 50px 0 50px 0; }
+        @media all and (max-width: 508px) {
+          .section-container .main-content-wrapper .main-content .picture {
+            margin: 30px 0 30px 0; } }
+        .section-container .main-content-wrapper .main-content .picture img {
+          place-self: center;
+          width: 260px;
+          height: auto;
+          display: block; }
+          @media all and (max-width: 508px) {
+            .section-container .main-content-wrapper .main-content .picture img {
+              max-width: 100%; } }
+      .section-container .main-content-wrapper .main-content .writing {
+        height: 300px;
+        overflow: auto;
+        text-align: center;
+        font: 700 1rem Helvetica, Arial, "Lucida Grande", sans-serif;
+        margin: 0 0 30px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        @media all and (max-width: 508px) {
+          .section-container .main-content-wrapper .main-content .writing {
+            margin: 0 0 30px 0; } }
+        @media all and (max-width: 508px) {
+          .section-container .main-content-wrapper .main-content .writing {
+            font: 700 0.8rem Helvetica, Arial, "Lucida Grande", sans-serif; } }
+        .section-container .main-content-wrapper .main-content .writing p {
+          padding: 0 10px 0 10px;
+          margin: auto; }
+          .section-container .main-content-wrapper .main-content .writing p span.title {
+            font: 700 1.3rem Helvetica, Arial, "Lucida Grande", sans-serif; }
+            @media all and (max-width: 508px) {
+              .section-container .main-content-wrapper .main-content .writing p span.title {
+                font: 700 1rem Helvetica, Arial, "Lucida Grande", sans-serif; } }
+  .section-container .footer-container {
+    margin: 0 0 30px 0;
+    font: 700 1rem "Cormorant", serif;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media all and (max-width: 508px) {
+      .section-container .footer-container {
+        font: 700 1rem "Cormorant", serif; } }
+    .section-container .footer-container p {
+      margin: auto; }
+
+@media all and (max-width: 508px) {
+  .paragraph-delete {
+    display: none; } }
+
+/*# sourceMappingURL=greek-main-v2.css.map */

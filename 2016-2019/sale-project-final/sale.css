@@ -1,0 +1,192 @@
+* {
+  /*outline: black solid 1px;*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+:root {
+  font-size: calc(1vw + 1vh + .25vmin); }
+
+html {
+  font-size: 16px;
+  background: #FF2626;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; }
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100vw; }
+
+.rows {
+  background: transparent;
+  position: absolute;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.row-1, .row-3, .row-5 {
+  width: 125vw; }
+
+.row-2, .row-4 {
+  width: 100vw; }
+
+.row-1 {
+  top: -12.5vh;
+  left: -12.5vw;
+  z-index: 10; }
+
+.row-2 {
+  top: 12.5vh;
+  left: 0;
+  z-index: 20; }
+
+.row-3 {
+  top: 37.5vh;
+  left: -12.5vw;
+  z-index: 50; }
+
+.row-4 {
+  top: 62.5vh;
+  left: 0;
+  z-index: 40; }
+
+.row-5 {
+  top: 87.5vh;
+  left: -12.5vw;
+  z-index: 70; }
+
+.rows article {
+  width: 25vw;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.rows article div {
+  font-size: 3em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: auto;
+  height: auto;
+  width: auto; }
+
+.row-2 article div, .row-4 article div {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-animation: group-two 5s linear 0s infinite alternate;
+          animation: group-two 5s linear 0s infinite alternate; }
+
+@-webkit-keyframes group-two {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); } }
+
+@keyframes group-two {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); } }
+.row-1 article div, .row-3 article div, .row-5 article div, .row-hidden article div {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: group-one 5s linear 0s infinite alternate;
+          animation: group-one 5s linear 0s infinite alternate; }
+
+@-webkit-keyframes group-one {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); } }
+
+@keyframes group-one {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); } }
+.row-hidden-1 {
+  display: none; }
+
+@media all and (max-width: 600px) {
+  .row-hidden-1 {
+    display: block;
+    width: 100vw;
+    background: transparent;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+  .rows {
+    height: 20vh; }
+
+  .row-hidden-1 {
+    top: -10vh;
+    z-index: 1; }
+
+  .row-1 {
+    top: 10vh; }
+
+  .row-2 {
+    top: 30vh; }
+
+  .row-3 {
+    top: 50vh; }
+
+  .row-4 {
+    top: 70vh; }
+
+  .row-5 {
+    top: 90vh; }
+
+  .row-hidden-1 article {
+    -webkit-animation: group-three 5s linear 0s infinite alternate;
+            animation: group-three 5s linear 0s infinite alternate; }
+
+  @-webkit-keyframes group-three {
+    0% {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    100% {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); } }
+
+  @keyframes group-three {
+    0% {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+    100% {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); } }
+  .row-hidden-1 article div {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); } }
+
+/*# sourceMappingURL=sale.css.map */

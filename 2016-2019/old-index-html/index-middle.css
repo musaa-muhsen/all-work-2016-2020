@@ -1,0 +1,141 @@
+
+/*================ contact page ===================*/
+
+.center-container-contact {
+	height: 50vh;
+	width: 60vw;
+	display: -webkit-box;
+    display: -moz-box;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+}
+
+.contact-page {
+  
+  font-weight: 700;
+  line-height: 30px; 
+  font-size: 0.8rem;
+  width: auto;
+  margin: auto;
+}
+.number-spacing 
+{
+  letter-spacing:3px;
+}
+
+/*===================== about ===================================*/
+
+.details p:nth-child(1n+1) {
+  position: relative;
+}
+.about-me-p,.skill-set-p,.education-p,.download-cv {
+	padding: 10px 0;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	font-weight: 400;
+	font-size: 0.6rem;
+	text-transform: none;
+	line-height: 1.2rem;
+}
+.center-container-about {
+	height: 50vh;
+	width: 60vw;
+	display: -webkit-box;
+    display: -moz-box;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+
+}
+#accordian {
+	width: 450px;
+	margin: auto;
+}
+ul {
+	list-style: none;
+}
+ul li  a {
+	margin: 5px 0;
+	display: block;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+
+}
+/*====================  websites projects  ====================*/
+
+.center-container-2016, .center-container-2017 {
+
+	height: 50vh;
+	width: 60vw;
+    display: -webkit-box;
+    display: -moz-box;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.center-container-2016 article, .center-container-2017 article {
+  height: 25vh;
+  width: 12vw;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+}
+.center-container-2016 article span, .center-container-2017 article span {
+	margin: auto;
+	font-size: 0.8rem;
+}
+
+@media all and (max-width:700px) {
+
+	#accordian {
+		width: 100%;
+	}
+
+.center-container-about {
+	width: 90%;
+}
+
+.about-me-p,.skill-set-p,.education-p,.download-cv {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+  }
+
+.center-container-2016, .center-container-2017 {
+	height: 50vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+}
+
+.center-container-2016 article, .center-container-2017 article  {
+	height: 6.25vh;
+	width: 100%;
+}
+
+.contact-page {
+  font-size: 1rem;
+}
+ul li  a { 
+font-size: 1.3rem;
+}
+}
+

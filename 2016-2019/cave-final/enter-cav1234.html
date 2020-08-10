@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>a cave in england</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Almendra+SC"
+			rel="stylesheet"
+		/>
+
+		<style>
+			:root {
+				font-size: calc(1vw + 1vh + 0.25vmin);
+			}
+			a {
+				color: white;
+				text-decoration: none;
+			}
+			* {
+				text-decoration: none;
+				padding: 0;
+				margin: 0;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			body {
+				font: 1em/1.2 "Almendra SC", Arial, Sans-serif;
+				background: url("./images-cave/cave-12345-min.jpg") no-repeat;
+				background-size: cover;
+				background-position: center;
+				width: 100vw;
+				min-height: 100vh;
+				overflow-x: hidden;
+			}
+			h1 {
+				text-align: center;
+				color: white;
+				-moz-transition: color 1s;
+				-webkit-transition: color 1s;
+				transition: color 1s;
+				letter-spacing: 6px;
+			}
+			a {
+				position: absolute;
+				top: 65%;
+				left: 50%;
+				-moz-transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+
+			h1:hover {
+				color: black;
+			}
+			@media only screen and (max-width: 650px) {
+				h1 {
+					letter-spacing: 4px;
+				}
+
+				a {
+					top: 60%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<a href="exit-cave.html">
+			<h1>Click<br />To<br />Enter</h1>
+		</a>
+	</body>
+</html>

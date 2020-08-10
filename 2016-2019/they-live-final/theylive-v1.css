@@ -1,0 +1,79 @@
+* { 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+	margin: 0;
+}
+html {
+    cursor: crosshair;
+	background: #000000;
+}
+
+.marquee {
+	height: auto;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 14.28571429vh;
+
+}
+
+.marquee span.right2left {
+	color: #FF2626;
+    display: inline-block;
+    text-indent: 0;
+    font-family: sans-serif;
+    font-size: 14.28571429vh;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*================== animation ============================*/
+.marquee span.right2left {
+    -webkit-animation: rightToleft 700s linear infinite;
+    -moz-animation: rightToleft 700s linear infinite;
+    animation: rightToleft 700s linear infinite;
+    padding-left: 0;
+}
+
+
+@-webkit-keyframes rightToleft {
+    0%   { -webkit-transform: translate(0,0);}
+    100% { -webkit-transform: translate(-100%,0);}
+}
+@-moz-keyframes rightToleft {
+    0%   { -moz-transform: translate(0,0);}
+    100% { -moz-transform: translate(-100%,0);}
+}
+@keyframes rightToleft {
+    0%   { transform: translate(0,0);}
+    100% { transform: translate(-100%,0);}
+}
+
+
+/*=================== media queries =======================*/
+
+
+@media all and (max-width:1000px) {
+
+    .marquee span.right2left {
+        -webkit-animation: rightToleft 900s linear infinite;
+        -moz-animation: rightToleft 900s linear infinite;
+        animation: rightToleft 900s linear infinite;
+
+    }
+
+}
+
+@media all and (max-width:700px) {
+    .marquee span.right2left {
+        -webkit-animation: rightToleft 1000s linear infinite;
+        -moz-animation: rightToleft 1000s linear infinite;
+        animation: rightToleft 1000s linear infinite;
+
+    }
+
+}
+
