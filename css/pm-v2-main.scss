@@ -462,8 +462,8 @@ display: grid;
 			width: 300px;
 		}
 		
-		li {
-			
+		li:nth-child(1):hover, li:nth-child(2):hover {
+		background: #fff;	
 			
 		}
 		
@@ -475,6 +475,31 @@ display: grid;
 		
 	}
 }
-.logo-image img {
-	width: 30px;
+
+.footer-last-li  {
+
+	margin-top: 8px;
+	div {
+		display: flex;
+		align-items: center;
+		span {
+			display: block;
+
+		}
+		span:nth-child(1) {
+			margin-top: 5px;
+		}
+		span:nth-child(2) {
+			margin: 0 6px;
+		}
+	}
+	
+	
+	img {
+		width: 30px;
+	}
+	
+}
+.footer-last-li > * {
+	//outline:  blue solid 1px;
 }
